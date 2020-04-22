@@ -1,0 +1,41 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="twitter.UI5Annotations.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<sap.m.semantic:FullscreenPage xmlns:sap.m.semantic="sap.m.semantic" title="Semantic Page" id="page0">
+				    <sap.m.semantic:content>
+				        <Text xmlns="sap.m" text="Text" id="text2"/>
+				        <Table noDataText="Drop column list items here and columns in the area above" id="table0" items="{/ZSD_SALESDOC}" headerText="{i18n>TESTTESTTEST}">
+				            <items>
+				                <ColumnListItem type="Active" id="item0">
+				                    <cells>
+				                        <Text text="{vbeln}" id="text3"/>
+				                        <Text text="{gbstk}" id="text4"/>
+				                        <Text text="{SDStatus}" id="text5"/></cells>
+				                </ColumnListItem>
+				            </items>
+				            <columns>
+				                <Column id="column0">
+				                    <header>
+				                        <Label text="{/#ZSD_SALESDOCType/vbeln/@sap:label}" id="label0"/>
+				                    </header>
+				                </Column>
+				                <Column id="column1">
+				                    <header>
+				                        <Label text="{/#ZSD_SALESDOCType/gbstk/@sap:label}" id="label1"/>
+				                    </header>
+				                </Column>
+				                <Column id="column2">
+				                    <header>
+				                        <Label text="SDStatus" id="label2"/>
+				                    </header>
+				                </Column></columns></Table>
+				    </sap.m.semantic:content>
+				</sap.m.semantic:FullscreenPage>
+				<Page id="page" title="{i18n>title}">
+					<content/>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,33 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZSD_SALESDOC_CDS/$metadata">
+		<edmx:Include Alias="Metadata" Namespace="ZSD_SALESDOC_CDS"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470974/Common.xml?api=v2">
+		<edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="UI5Annotations.annotation1.ZSD_SALESDOC_CDS">
+			<Annotations Target="Metadata.ZSD_SALESDOCType">
+				<Annotation Term="UI.DataPoint">
+					<Record Type="UI.DataPointType">
+						<PropertyValue Property="Value" Path="SDStatus">
+							<Annotation Term="Common.QuickInfo" String="{@i18n&gt;TEST}"/>
+							<Annotation Term="Common.Label" String="{@i18n&gt;TESTTEST}"/>
+							<Annotation Term="Common.Heading" String="{@i18n&gt;TESTTESTTEST}"/>
+						</PropertyValue>
+						<PropertyValue Property="Criticality" EnumMember="UI.CriticalityType/Critical"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record Type="UI.HeaderInfoType">
+						<PropertyValue Property="TypeName" String="{@i18n&gt;SDSTATUS}"/>
+						<PropertyValue Property="TypeNamePlural" String="{@i18n&gt;CONFIRMED}"/>
+					</Record>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
